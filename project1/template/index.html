@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <script src="style.css"></script>
+</head>
+<body>
+    <h1>Car Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="name">Car Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand"><br><br>
+        
+        <label for="fuel_type">Fuel Type:</label>
+        <select id="fuel_type" name="fuel_type">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Electric">Electric</option>
+        </select><br><br>
+        
+        <label for="kms_driven">Kilometers Driven:</label>
+        <input type="text" id="kms_driven" name="kms_driven"><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
